@@ -1,0 +1,9 @@
+.userinput {
+    display:flex;
+    flex-direction: row;
+}
+
+button.char {
+    font-family:Lucida Sans Unicode;
+    font-size: medium;
+}

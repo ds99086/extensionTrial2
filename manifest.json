@@ -1,0 +1,12 @@
+{
+    "name": "Symbols",
+    "description": "Click to select maths symbols and copy to clipboard",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+}
