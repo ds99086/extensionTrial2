@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded', function () {
     const textBox = document.getElementById("selectedinput");
     const clipBox = document.getElementById("clipbox");
     const optionBox = document.getElementsByClassName("charoptions")[0];
-    
-    document.addEventListener('click', function(e) {
+
+    document.addEventListener('click', function (e) {
 
         if (e.target && e.target.matches(".char")) {
             const textToCopy = e.target.innerHTML;
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (){
             // console.log(textBox);
             textBox.value += textToCopy;
         }
-        if (e.target && e.target.matches(".copyinput")){
+        if (e.target && e.target.matches(".copyinput")) {
             textBox.select();
             document.execCommand("copy");
         }
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function (){
             clipBox.select();
             document.execCommand("paste");
             const clipText = navigator.clipboard.read();
-            clipBox.innerHTML = clipText; 
+            clipBox.innerHTML = clipText;
             //console.log(clipBox);
         }
     })
@@ -50,6 +50,6 @@ document.addEventListener('DOMContentLoaded', function (){
             `
         });
     });
-    
+
 })
 
