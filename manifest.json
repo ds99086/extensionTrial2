@@ -8,5 +8,12 @@
     },
     "icons": {
         "128": "icon.png"
-    }
+    },
+    "permissions" : [
+        "clipboard-read",
+        "clipboard-write",
+        "clipboardRead",
+        "clipboardWrite"
+    ]
+    
 }
